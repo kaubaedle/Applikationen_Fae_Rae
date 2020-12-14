@@ -3,6 +3,14 @@ background_color = 127
 def setup() :
     size(768, 512)
     background(255,255,255)
+    fill(0)
+    textSize(42)
+    text("Interaktiver Farbvergleich", 20, 40)
+    textSize(15)
+    text("Verändere die Farbe mit der Maus. Horizontal verändert den Rot-Wert, Vertikal den Grün-Wert, ", 20, 80)
+    text("das Mausrad den Blau-Wert.", 20, 100)
+    text("Wähle mit der linken und rechten Maustaste eine Farbe für den Vergleich aus.", 20, 120)
+    text("Setze deine Auswahl mit der linken und rechten Maustaste zurück", 20, 140)
     
 def draw() :
     fill(mouseX,mouseY-256,background_color)
@@ -60,6 +68,5 @@ def keyPressed():
             LinksLeer()
         if keyCode == RIGHT:
             RechtsLeer()
-   #testest
-   #test2222
+
             
