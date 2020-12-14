@@ -1,13 +1,13 @@
 background_color = 127
     
 def setup() :
-    size(768, 256)
+    size(768, 512)
     background(255,255,255)
     
 def draw() :
-    fill(mouseX,mouseY,background_color)
+    fill(mouseX,mouseY-256,background_color)
     stroke(255)
-    square(0, 0, 256)
+    square(0, 256, 256)
     
     # fill(255)
     # rect(374, 0, 374, 256)
@@ -24,24 +24,24 @@ def mouseWheel(event) :
     # https://py.processing.org/reference/mouseWheel.html
 
 def RechteckLinks():
-    rect(375,52.5,50,120)
-    text("r = " + str(mouseX), 300, 60)
-    text("g = " + str(mouseY), 300, 120)
-    text("b = " + str(background_color), 300, 180)
+    rect(375,308.5,50,120)
+    text("r = " + str(mouseX), 300, 316)
+    text("g = " + str(mouseY-256), 300, 376)
+    text("b = " + str(background_color), 300, 436)
     
 def RechteckRechts():
-    rect(575,52.5,50,120)
-    text("r = " + str(mouseX), 500, 60)
-    text("g = " + str(mouseY), 500, 120)
-    text("b = " + str(background_color), 500, 180) 
+    rect(575,308.5,50,120)
+    text("r = " + str(mouseX), 500, 312)
+    text("g = " + str(mouseY-256), 500, 376)
+    text("b = " + str(background_color), 500, 436) 
     
 def LinksLeer():
     fill(255)
-    rect(280, 45, 200, 160)
+    rect(280, 301, 200, 160)
     
 def RechtsLeer():
     fill(255)
-    rect(480, 45, 200, 160)
+    rect(480, 301, 200, 160)
     
 def mouseClicked(event) :
     # print(mouseX, mouseY, background_color)
@@ -60,4 +60,6 @@ def keyPressed():
             LinksLeer()
         if keyCode == RIGHT:
             RechtsLeer()
+   #testest
+   #test2222
             
