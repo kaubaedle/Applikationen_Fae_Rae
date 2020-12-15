@@ -50,16 +50,20 @@ def LinksLeer():
 def RechtsLeer():
     fill(255)
     rect(480, 301, 200, 160)
+
+def Kreis():
+    ellipse(mouseX, mouseY, 20, 20)
     
 def mouseClicked(event) :
     # print(mouseX, mouseY, background_color)
     if mouseClicked:
         if mouseButton == LEFT:
             RechteckLinks()
+            Kreis()
 
         if mouseButton == RIGHT:
             RechteckRechts()
-            
+            Kreis()
     #circle(mouseX, mouseY, 20)
 
 def keyPressed():
