@@ -31,7 +31,7 @@ def mouseWheel(event) :
     #Diese Funktion holt die Information der Position des Mausrades und wandelt sie in einen Wert um, der für die Farbeingabe benutzt werden kann. Der Wert wird unter der Variable background_color gespeichert. Die Funktion stammt von: https://py.processing.org/reference/mouseWheel.html
 
 def RechteckLinks():
-    rect(375,308.5,50,120)
+    rect(375,300,50,140)
     text("r = " + str(mouseX), 300, 316)
     text("g = " + str(mouseY-256), 300, 376)
     text("b = " + str(background_color), 300, 436)
@@ -39,7 +39,7 @@ def RechteckLinks():
     #Diese Funktion zeichnet bei einem Linksklick ein Rechteck und die Angaben zur Farbe in der entsprechenden Farbe auf der linken Seite
     
 def RechteckRechts():
-    rect(575,308.5,50,120)
+    rect(575,300,50,140)
     text("r = " + str(mouseX), 500, 312)
     text("g = " + str(mouseY-256), 500, 376)
     text("b = " + str(background_color), 500, 436) 
@@ -61,9 +61,6 @@ def RechtsLeer():
 def Kreis():
     ellipse(mouseX, mouseY, 20, 20)
     
-def Kreuz():
-    fill(0)
-    line(mouseX-15, mouseY+15, mouseX+15, mouseY-15)
     
 def mouseClicked(event) :
     # print(mouseX, mouseY, background_color)
@@ -71,11 +68,10 @@ def mouseClicked(event) :
         if mouseButton == LEFT:
             RechteckLinks()
             #Kreis()
-            #Kreuz()
 
         if mouseButton == RIGHT:
             RechteckRechts()
-            Kreis()
+            #Kreis()
 
     #Diese Funktion erfasst einen Mausklick und betätigt die jeweilige Funktion        
     
