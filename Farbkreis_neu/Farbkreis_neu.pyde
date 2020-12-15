@@ -58,12 +58,12 @@ def RechtsLeer():
     
     #Diese Funktion löscht bei betätigen der rechten Pfeiltaste die Farbangaben und das Rechteck auf der rechten Seite
 
-def Kreis():
-    ellipse(mouseX, mouseY, 20, 20)
+    # def Kreis():
+    #ellipse(mouseX, mouseY, 20, 20)
     
     
 def mouseClicked(event) :
-    # print(mouseX, mouseY, background_color)
+    #print(mouseX, mouseY, background_color)
     if mouseClicked:
         if mouseButton == LEFT:
             RechteckLinks()
