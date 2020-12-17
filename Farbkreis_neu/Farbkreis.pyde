@@ -57,8 +57,8 @@ def RechtsLeer():
     fill(255)
     rect(480, 301, 200, 160)
    
-def Kreis():
-    ellipse(mouseX, mouseY, 20, 20)
+#def Kreis():
+    #ellipse(mouseX, mouseY, 20, 20)
    
 
     #Diese Funktion erfasst einen Mausklick und betätigt die jeweilige Funktion    
@@ -67,10 +67,10 @@ def mouseClicked(event) :
     if mouseClicked:
         if mouseButton == LEFT:
             RechteckLinks()
-            Kreis()
+            #Kreis()
         if mouseButton == RIGHT:
             RechteckRechts()
-            Kreis()
+            #Kreis()
             
        
     #Diese Funktion erfasst einen Tastendruck und betätigt die jeweilige Funktion   
